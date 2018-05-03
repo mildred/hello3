@@ -1,0 +1,5 @@
+language: go
+go:
+  - tip
+script:
+  - CGO_ENABLED=0 GOOS=linux go build -o app .
