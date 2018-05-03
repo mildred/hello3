@@ -1,4 +1,4 @@
-FROM golang:1.10.1-stretch AS build
+FROM golang AS build
 ARG PKGPATH=hello
 ENV CGO_ENABLED=0
 COPY . /go/src/$PKGPATH/
